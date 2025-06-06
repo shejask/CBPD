@@ -6,8 +6,8 @@ import MobileMenu from '../MobileMenu/MobileMenu';
 import Image from 'next/image';
 
 const Header = (props) => {
-
     const [menuActive, setMenuState] = useState(false);
+    const [searchTerm, setSearchTerm] = useState('');
 
     const ClickHandler = () => {
         window.scrollTo(10, 0);
@@ -15,6 +15,11 @@ const Header = (props) => {
 
     const SubmitHandler = (e) => {
         e.preventDefault()
+        // Handle search submission here
+    }
+
+    const handleSearchChange = (e) => {
+        setSearchTerm(e.target.value);
     }
 
     return (
@@ -121,7 +126,14 @@ const Header = (props) => {
                 <button className="close-header-search" onClick={() => setMenuState(!menuActive)}><i className="icon-02"></i></button>
                 <form method="post" onSubmit={SubmitHandler}>
                     <div className="form-group">
-                        <input type="text" name="search" value="" placeholder="Search Here" required="" />
+                        <input 
+                            type="text" 
+                            name="search" 
+                            value={searchTerm} 
+                            onChange={handleSearchChange}
+                            placeholder="Search Here" 
+                            required="" 
+                        />
                         <button type="submit" className="search-btn"><i className="icon-23"></i></button>
                     </div>
                 </form>
