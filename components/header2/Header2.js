@@ -42,7 +42,7 @@ const Header2 = (props) => {    const [menuActive, setMenuState] = useState(fals
                                                
                                             </li>
                                             <li><Link onClick={ClickHandler} href="/about">About us</Link></li>
-                                            <li><Link onClick={ClickHandler} href="/programs">Programs</Link></li>
+                                            <li><Link onClick={ClickHandler} href="/service-s2">Programs</Link></li>
                                             <li><Link onClick={ClickHandler} href="/partner">Become a Partner</Link></li>
                                             <li><Link onClick={ClickHandler} href="/contact">Contact</Link></li>
 
