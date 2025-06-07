@@ -15,14 +15,10 @@ const ServicePage = () => {
         <Fragment>
             <div className='page-wrapper'>
                 <Navbar2 hclass={'header-style-2'} />
-                <PageTitle pageTitle={'Services'} pagesub={'Services'} Bg={'/images/page-title/bg-2.jpg'} />
+                <PageTitle pageTitle={'Programs'} pagesub={'Programs'} Bg={'/images/page-title/bg-2.jpg'} />
                 <div className="service-page">
-                    <MarqueeSectionS2 mClass={'separator-padding'} />
-                    <ServiceSectionS2/>
-                    <ServiceSection/>
-                    <PartnerSection/>
-                    <BenefitSection/>
-                </div>
+                     <ServiceSection/>
+                 </div>
                 <CtaSection />
                 <Footer />
                 <Scrollbar />

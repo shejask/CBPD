@@ -12,7 +12,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
-        <title>Consl - Consulting Business Next Js Template</title>
+        <title>CBPD</title>
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/images/favicon.ico" />
+        <meta name="description" content="CBPD - Central Board of Professional Development" />
       </Head>
       <Component {...pageProps} />
     </div>

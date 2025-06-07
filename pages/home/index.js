@@ -1,46 +1,40 @@
 import React, { Fragment } from 'react';
-import Navbar from '../../components/Navbar/Navbar'
-import Hero from '../../components/hero/hero';
-import About from '../../components/about/about';
-import Features from '../../components/Features/Features';
-import MarqueeSection from '../../components/MarqueeSection/MarqueeSection';
-import ServiceSection from '../../components/ServiceSection/ServiceSection';
-import VideoSection from '../../components/VideoSection/VideoSection';
-import FunFact from '../../components/FunFact/FunFact';
-import ProjectSection from '../../components/ProjectSection/ProjectSection';
-import Testimonial from '../../components/Testimonial/Testimonial';
-import TeamSection from '../../components/TeamSection/TeamSection';
-import FaqSection from '../../components/FaqSection/FaqSection';
-import ContactSection from '../../components/ContactSection/ContactSection';
-import BlogSection from '../../components/BlogSection/BlogSection';
-import CtaSection from '../../components/CtaSection/CtaSection';
-import Footer from '../../components/footer/Footer';
-import Scrollbar from '../../components/scrollbar/scrollbar';
-import Logo from '/public/images/logo.svg'
+import dynamic from 'next/dynamic';
 
-const HomePage = () => {
+const Navbar2 = dynamic(() => import('../../components/Navbar2/Navbar2'));
+const Hero2 = dynamic(() => import('../../components/hero2/Hero2'));
+const About2 = dynamic(() => import('../../components/about2/About2'));
+const About9 = dynamic(() => import('../../components/about9/About9'));
+const ServiceSectionS2 = dynamic(() => import('../../components/ServiceSectionS2/ServiceSectionS2'));
+const ChooseSection = dynamic(() => import('../../components/ChooseSection/ChooseSection'));
+const BenefitSection = dynamic(() => import('../../components/BenefitSection/BenefitSection'));
+const PartnerSection = dynamic(() => import('../../components/PartnerSection/PartnerSection'));
+const CtaSection = dynamic(() => import('../../components/CtaSection/CtaSection'));
+const InstagramSection = dynamic(() => import('../../components/InstagramSection/InstagramSection'));
+const Footer = dynamic(() => import('../../components/footer/Footer'));
+const Scrollbar = dynamic(() => import('../../components/scrollbar/scrollbar'));
+const ServiceSection = dynamic(() => import('../../components/ServiceSection/ServiceSection'));
+
+const home = () => {
     return (
         <Fragment>
-            <div className='page-wrap'>
-                <Navbar hclass={'header-style-1'} Logo={Logo}/>
-                <Hero />
-                <About />
-                <Features />
-                <MarqueeSection />
-                <ServiceSection />
-                <VideoSection />
-                <FunFact fClass={'pt-0'}/>
-                <ProjectSection />
-                <Testimonial />
-                <TeamSection />
-                <FaqSection />
-                <ContactSection />
+            <div className='page-wrapper'>
+                <Navbar2 hclass={'header-style-2'} />
+                <Hero2 />
+                <About2 />
+                <PartnerSection />
+                <About9 />
+                <ServiceSection/>
+                {/* <ServiceSectionS2 /> */}
+                <ChooseSection />
+                <BenefitSection />
                 <CtaSection />
-                <BlogSection />
+                <InstagramSection />
                 <Footer />
                 <Scrollbar />
             </div>
         </Fragment>
     )
 };
-export default HomePage;
+
+export default home;

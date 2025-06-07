@@ -6,21 +6,19 @@ import CtaSection from '../../components/CtaSection/CtaSection';
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import Footer from '../../components/footer/Footer';
 import ServiceSectionS2 from '../../components/ServiceSectionS2/ServiceSectionS2';
+import ServiceSection from '../../components/ServiceSection/ServiceSection';
 import PartnerSection from '../../components/PartnerSection/PartnerSection';
 import BenefitSection from '../../components/BenefitSection/BenefitSection';
 
-const ServicePageS2 = () => {
+const programs = () => {
     return (
         <Fragment>
             <div className='page-wrapper'>
                 <Navbar2 hclass={'header-style-2'} />
-                <PageTitle pageTitle={'Services'} pagesub={'Services'} Bg={'/images/page-title/bg-2.jpg'} />
+                <PageTitle pageTitle={'Programs'} pagesub={'Programs'} Bg={'/images/page-title/bg-2.jpg'} />
                 <div className="service-page">
-                    <MarqueeSectionS2 mClass={'separator-padding'} />
-                    <ServiceSectionS2/>
-                    <PartnerSection/>
-                    <BenefitSection/>
-                </div>
+                     <ServiceSection/>
+                 </div>
                 <CtaSection />
                 <Footer />
                 <Scrollbar />
@@ -28,5 +26,5 @@ const ServicePageS2 = () => {
         </Fragment>
     )
 };
-export default ServicePageS2;
+export default programs;
 

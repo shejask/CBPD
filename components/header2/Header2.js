@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import logo from '/public/images/logo.svg'
-import logo2 from '/public/images/logo-2.png'
+import logo2 from '/public/images/logo-4.png'
 import MobileMenu from '../MobileMenu/MobileMenu';
 import HeaderTopbar from '../HeaderTopbar/HeaderTopbar';
 import Image from 'next/image';
@@ -29,8 +29,8 @@ const Header2 = (props) => {    const [menuActive, setMenuState] = useState(fals
                         <div className="row align-items-center">
                             <div className="col-xl-2 col-lg-3 col-md-7 col-5">
                                 <div className="logo">
-                                    <Link className='logo' onClick={ClickHandler} href="/home"><Image src={logo2} alt="logo" /></Link>
-                                    <Link className='logo-2' onClick={ClickHandler} href="/home"><Image src={logo2} alt="logo" /></Link>
+                                    <Link className='logo' onClick={ClickHandler} href="/"><Image src={logo2} alt="logo" /></Link>
+                                    <Link className='logo-2' onClick={ClickHandler} href="/"><Image src={logo2} alt="logo" /></Link>
                                 </div>
                             </div>
                             <div className="col-xl-7 col-lg-6 col-md-1 col-1 text-right text-xl-right d-none d-lg-block">
@@ -38,12 +38,12 @@ const Header2 = (props) => {    const [menuActive, setMenuState] = useState(fals
                                     <nav id="mobile-menu">
                                         <ul className="nav">
                                             <li className="has-submenu">
-                                                <Link onClick={ClickHandler} href="/home-2">Home</Link>
+                                                <Link onClick={ClickHandler} href="/">Home</Link>
                                                
                                             </li>
                                             <li><Link onClick={ClickHandler} href="/about">About us</Link></li>
-                                            <li><Link onClick={ClickHandler} href="/service-s2">Programs</Link></li>
-                                            <li><Link onClick={ClickHandler} href="/projects-s3">Become a Partner</Link></li>
+                                            <li><Link onClick={ClickHandler} href="/programs">Programs</Link></li>
+                                            <li><Link onClick={ClickHandler} href="/partner">Become a Partner</Link></li>
                                             <li><Link onClick={ClickHandler} href="/contact">Contact</Link></li>
 
 
