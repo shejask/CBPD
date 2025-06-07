@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 
 const Navbar2 = dynamic(() => import('../../components/Navbar2/Navbar2'));
 const Hero2 = dynamic(() => import('../../components/hero2/Hero2'));
-const About2 = dynamic(() => import('../../components/about2/About2'));
+const About2 = dynamic(() => import('../../components/about2/about2'));
 const About9 = dynamic(() => import('../../components/about9/About9'));
 const ServiceSectionS2 = dynamic(() => import('../../components/ServiceSectionS2/ServiceSectionS2'));
 const ChooseSection = dynamic(() => import('../../components/ChooseSection/ChooseSection'));
